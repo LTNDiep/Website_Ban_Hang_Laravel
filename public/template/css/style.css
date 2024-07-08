@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, .main-menu > li > a, .ltext-102, .ltext-103 {
+    font-family: 'Roboto', sans-serif !important ;
+}
+
+.hidden  { display: none !important; }
+
+/* button addmin */
+.card-header,.btn-primary { background-color: #0aa0b7 !important;   /*   #17a2b8   #717fe0    */ }
+
+.col-md-9 > .card > .card-header > .nav { background-color: #fff; }
+
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+    color: #fff;
+    background-color: #0aa0b7;
+}
+
+.content > .container-fluid > .row > .col-12 > .info-box {
+    width: 500px;
+}
+
+/* slider */
+.section-slide { margin-top: 50px; }
+
+/* product home */
+.block2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px
+}
+.block2-pic  img { height: 280px !important; }
+
+.block2-txt > .block2-txt-child1 > .stext-104 {
+    height: 50px;
+    margin-left:15px;
+}
+.stext-105{
+    margin-left:15px;
+    margin-bottom: 10px;
+}
+
+.item-slick1 > .container > .respon5 > div {
+    margin-left: 50px;
+}

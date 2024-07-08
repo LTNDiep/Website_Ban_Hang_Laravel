@@ -1,0 +1,194 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Chỉnh kiểu chữ không chân*/
+html{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.clear{
+    clear: both; /* */
+}
+
+.text-while{
+color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* HEADER */
+
+
+#header{
+    font-size: 17px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:  #0aa0b7; /*  #0aada8  */
+    z-index: 1;
+
+}
+#nav1{
+    margin-left: 10px;
+    margin-right: 40px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #ffffff
+}
+#nav1 img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+
+}
+
+/* Navigation */
+#nav {
+    display: inline-block;
+    list-style-type: none; /* Bỏ dấu chấm của thẻ li*/
+}
+
+
+#nav >li {
+    display: inline-block; /* Đều 1 hàng*/
+}
+
+#nav li {
+    position: relative; /* Vị trí tương đối */
+
+}
+
+#nav > li > a{
+    color: #ffffff;
+    text-transform:uppercase ; /*tất cả chữ hoa*/
+
+}
+
+#nav li a{
+
+    text-decoration: none; /*Bỏ gạch chân chữ */
+    line-height: 50px; /* Chiều cao heightline */
+    padding: 0 10px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #b2e2ea;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+/* Navigation phụ*/
+#nav .subnav {
+    display: none; /* Ẩn đi*/
+    min-width: 180px; /*Chiều ngang tối thiểu*/
+    top: 100%;
+    left: 0;
+    position: absolute; /* Vị trí tuyệt đối*/
+    list-style-type: none; /* Bỏ dấu chấm của thẻ li*/
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Bóng đỗ cho Navigation phụ */
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+
+#header .search-bt{
+    color: #fff;
+    float: right;
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer; /* Thay đổi hình dạng trỏ chuột */
+}
+#header .ti-search, .ti-user, .ti-shopping-cart{
+    padding: 15px 15px;
+    line-height: 50px;
+}
+
+#header .menuheader {
+    display: none;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/* Mobile styles */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        height: auto;
+        padding: 10px;
+    }
+
+    #nav1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav > li {
+        width: 100%;
+    }
+
+    #nav > li > a {
+        padding: 10px 20px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    #nav .subnav {
+        position: static;
+        box-shadow: none;
+        background-color: #0aa0b7;
+    }
+
+    #nav .subnav a {
+        padding: 10px 20px;
+        color: #fff;
+    }
+
+    #header .menuheader {
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+}
+
+/* Show the menu when the hamburger is clicked */
+#nav.show {
+    display: flex;
+}
+
+
